@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="application.Controller"
+			xmlns:fx="http://javafx.com/fxml/1" alignment="center" 
+			hgap="15" vgap="20" gridLinesVisible="false">
+	<padding>
+		<Insets bottom="45" left="30"/>
+	</padding>
+	<Text id="ip-finder-text" text="IP Address Finder" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+	<Button fx:id="cancelBtn" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#cancelBtnClicked"/>
+	<Label text="Enter an URL:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+	<TextField fx:id="urlField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+	<Button fx:id="findBtn" text="Find IP Address" GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.columnSpan="2" onAction="#findBtnClicked"/>
+	<Label text="IP Address is: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+	<Label fx:id="ipLabel" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+	<stylesheets>
+    	<URL value="@styles.css" />
+	</stylesheets>
+</GridPane>
+

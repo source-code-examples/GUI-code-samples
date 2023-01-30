@@ -1,0 +1,52 @@
+.label {
+	 -fx-text-fill: white;
+	 -fx-font-family: "Arial Black";
+	 -fx-font-size: 14px;
+}
+
+.root {
+/* 	-fx-background-color: #559999;			*/
+	-fx-background-color: linear-gradient(#41A2B1, #8A5058);
+	-fx-border-width: 3px;
+	-fx-border-color: #777777;
+}
+
+#cancelBtn {
+	-fx-pref-width: 40;
+    -fx-pref-height: 40;
+	-fx-background-image: url("../images/close.png");
+	-fx-background-size: 30.0 30.0; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: right;
+    -fx-background-color: transparent;
+    -fx-padding: 0 110px;
+}
+
+#findBtn {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold;
+    -fx-pref-width: 150;
+    -fx-pref-height: 35;
+    -fx-background-color: linear-gradient(#41A2B1, #8A5058);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#ip-finder-text {
+   -fx-font-size: 32px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #418181;
+   -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.8), 3,0.2,0, 1);
+}
+
+#ipLabel {
+	-fx-text-fill: darkgray;
+	-fx-font-size: 15px;
+}
+
+#urlField {
+	-fx-text-fill: #999999;
+	-fx-background-color: #C5E9E9;	
+	-fx-font-size: 14px;
+	-fx-font-family: "Arial Black";
+}
